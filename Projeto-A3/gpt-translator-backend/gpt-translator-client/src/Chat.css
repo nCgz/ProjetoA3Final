@@ -1,0 +1,104 @@
+/* Chat.css */
+/* Contêiner Principal */
+.chat-container {
+    max-width: 750px;          /* Define a largura máxima do contêiner */
+    margin: 0 auto;            /* Centraliza o contêiner horizontalmente */
+    padding: 8px;              /* Adiciona espaçamento interno */
+    border: 2px solid #ddd;    /* Adiciona uma borda cinza clara */
+    border-radius: 10px;       /* Arredonda os cantos do contêiner */
+    box-shadow: 0 4px 80px #47afe81a; /* Adiciona uma sombra ao redor do contêiner */
+    background-color: hsla(213, 96%, 72%, 0.102); /* Define a cor de fundo do contêiner */
+}
+
+/* Título */
+.chat-title {
+    text-align: left;        /* Alinha o texto à esquerda */
+    color: #000000;          /* Define a cor do texto */
+    margin-bottom: 10px;     /* Adiciona um espaçamento inferior */
+    font-size: 28px;         /* Define o tamanho da fonte */
+}
+
+/* Textarea de Entrada */
+.chat-textarea {
+    width: 95%;             /* Define a largura do textarea para 100% do contêiner pai */
+    padding: 10px;          /* Adiciona espaçamento interno */
+    margin-bottom: 10px;    /* Adiciona um espaçamento inferior */
+    border: 1px solid #ccc; /* Define a borda do textarea */
+    border-radius: 10px;    /* Arredonda os cantos do textarea */
+    font-size: 16px;        /* Define o tamanho da fonte */
+}
+
+/* Labels */
+.chat-label {
+    display: block;          /* Define o label como um bloco, ocupando a largura total */
+    margin-bottom: 5px;      /* Adiciona um espaçamento inferior */
+    font-size: 16px;         /* Define o tamanho da fonte */
+    color: #333;             /* Define a cor do texto */
+    margin-left: 10px;       /* Adiciona um espaçamento à esquerda */
+    margin-right: 10px;      /* Adiciona um espaçamento à direita */
+}
+
+/* Selects */
+.chat-select {
+    width: 80%;              /* Define a largura do select */
+    padding: 10px;           /* Adiciona espaçamento interno */
+    margin-top: 5px;         /* Adiciona um espaçamento superior */
+    border: 1px solid #ccc;  /* Define a borda do select */
+    border-radius: 10px;     /* Arredonda os cantos do select */
+    font-size: 16px;         /* Define o tamanho da fonte */
+    margin-left: 10px;       /* Adiciona um espaçamento à esquerda */
+    margin-right: 10px;      /* Adiciona um espaçamento à direita */
+}
+
+/* Botão */
+.chat-button {
+    display: block;              /* Define o botão como um bloco, ocupando a largura total */
+    width: 30%;                  /* Define a largura do botão */
+    padding: 10px;               /* Adiciona espaçamento interno */
+    background-color: #007BFF;   /* Define a cor de fundo do botão */
+    color: white;                /* Define a cor do texto do botão */
+    border: none;                /* Remove a borda padrão */
+    border-radius: 4px;          /* Arredonda os cantos do botão */
+    font-size: 16px;             /* Define o tamanho da fonte */
+    cursor: pointer;             /* Altera o cursor para indicar que o botão é clicável */
+    margin: 20px auto;           /* Centraliza o botão horizontalmente e adiciona um espaçamento superior */
+}
+
+/* Botão - Efeito ao Passar o Mouse */
+.chat-button:hover {
+    background-color: #9605e4;   /* Altera a cor de fundo quando o mouse está sobre o botão */
+}
+
+/* Subtítulo */
+.chat-subtitle {
+    text-align: left;        /* Alinha o texto à esquerda */
+    color: #000000;          /* Define a cor do texto */
+    margin-bottom: 10px;     /* Adiciona um espaçamento inferior */
+    font-size: 20px;         /* Define o tamanho da fonte */
+}
+
+/* Textarea de Saída */
+.chat-output {
+    width: 95%;             /* Define a largura do textarea para 100% do contêiner pai */
+    padding: 10px;          /* Adiciona espaçamento interno */
+    margin-bottom: 10px;    /* Adiciona um espaçamento inferior */
+    border: 1px solid #ccc; /* Define a borda do textarea */
+    border-radius: 10px;    /* Arredonda os cantos do textarea */
+    font-size: 16px;        /* Define o tamanho da fonte */
+}
+
+/* Spinner de Carregamento */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);  /* Define a borda do spinner */
+    width: 36px;                           /* Define a largura do spinner */
+    height: 36px;                          /* Define a altura do spinner */
+    border-radius: 50%;                    /* Arredonda os cantos do spinner */
+    border-left-color: #22a6b3;            /* Define a cor da borda esquerda */
+    animation: spin 1s linear infinite;    /* Define a animação do spinner */
+    margin: 20px auto;                     /* Centraliza o spinner horizontalmente */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
